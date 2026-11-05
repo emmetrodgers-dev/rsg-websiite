@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rodgers Strategy Group | Know to sell, track to grow</title>
+<meta name="description" content="Rodgers Strategy Group is a UK marketing firm. Know to sell, track to grow.">
+<meta name="theme-color" content="#0E1A33">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230E1A33'/><text x='50' y='64' font-size='44' font-family='Georgia,serif' font-weight='700' fill='%23C9A24B' text-anchor='middle'>RSG</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0E1A33;
+  --navy-deep:#0A1326;
+  --navy-lift:#14233F;
+  --silver:#C3C8D2;
+  --silver-body:#A3ABBA;
+  --gold:#C9A24B;
+  --gold-hi:#E2BF68;
+  --line:#26365A;
+  --serif:"Playfair Display",Georgia,"Times New Roman",serif;
+  --sans:"Jost","Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:4.5rem}
+body{background:var(--navy);color:var(--silver-body);font-family:var(--sans);font-weight:300;font-size:1.0625rem;line-height:1.7;letter-spacing:.01em}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+.wrap{max-width:72rem;margin:0 auto;padding:0 2rem}
+
+/* menu bar */
+header{position:fixed;top:0;left:0;right:0;z-index:10;background:rgba(10,19,38,.94);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:4rem;max-width:80rem}
+.mark{font-family:var(--serif);font-weight:700;font-size:1.3rem;letter-spacing:.12em;text-decoration:none;color:var(--gold)}
+nav{display:flex;gap:2.25rem}
+nav a{font-weight:400;font-size:.98rem;letter-spacing:.08em;text-decoration:none;color:var(--silver);padding:.3rem 0;border-bottom:2px solid transparent;transition:color .25s,border-color .25s}
+nav a:hover{color:var(--gold-hi);border-color:var(--gold)}
+
+/* landing */
+.hero{background:linear-gradient(180deg,var(--navy-deep),var(--navy));padding:6.5rem 0 3.5rem;min-height:92vh;display:flex;align-items:center;border-bottom:4px solid var(--gold)}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:2rem;align-items:center;width:100%;max-width:80rem}
+.hero h1{font-family:var(--serif);font-weight:700;font-size:clamp(2.7rem,7vw,6rem);line-height:1.05;letter-spacing:.01em;max-width:10ch;color:var(--gold);background:linear-gradient(100deg,var(--gold) 0%,var(--gold-hi) 50%,var(--gold) 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:fade 1.4s ease-out both}
+.rule{width:6rem;height:4px;background:var(--gold);margin:2.25rem 0;animation:fade 1.4s .4s ease-out both}
+.slogan{font-family:var(--serif);font-weight:500;font-size:clamp(1.3rem,2.8vw,1.9rem);letter-spacing:.05em;color:var(--silver);animation:fade 1.4s .7s ease-out both}
+.tree{width:100%;max-width:30rem;height:auto;justify-self:center;animation:fade 2s .3s ease-out both}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+
+/* sections */
+section{padding:4.5rem 0;border-top:1px solid var(--line)}
+section.deep{background:var(--navy-deep)}
+h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.9rem,4vw,2.7rem);line-height:1.15;letter-spacing:.01em;color:var(--silver)}
+h3{font-family:var(--serif);font-weight:600;font-size:1.4rem;letter-spacing:.02em;color:var(--silver);line-height:1.25}
+.split{display:grid;grid-template-columns:.8fr 1.2fr;gap:3.5rem;align-items:start}
+.lead{margin-top:1.25rem;max-width:26rem}
+.panel{background:var(--navy-lift);border:1px solid var(--line);border-top:3px solid var(--gold);padding:1.75rem 1.9rem}
+.panel p{margin-top:.6rem}
+.stack{display:grid;gap:1.25rem}
+.tag{display:block;font-weight:500;font-size:.85rem;letter-spacing:.06em;color:var(--gold);margin-bottom:.35rem}
+.panel h3.big{font-size:1.9rem;color:var(--gold)}
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:2.5rem}
+.cols ul{list-style:none;margin-top:1.1rem;padding-top:1rem;border-top:1px solid var(--line)}
+.cols li{position:relative;padding-left:1.1rem;font-size:.98rem;line-height:1.9}
+.cols li::before{content:"";position:absolute;left:0;top:.8em;width:6px;height:6px;background:var(--gold)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem;margin-top:2.5rem;position:relative}
+.steps::before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:var(--gold)}
+.steps li{list-style:none;padding-top:1.5rem}
+.steps .n{font-family:var(--serif);font-weight:700;font-size:2.4rem;line-height:1;color:var(--gold);display:block;margin-bottom:.6rem}
+.steps p{margin-top:.4rem;font-size:.98rem}
+.mail{display:inline-block;font-family:var(--serif);font-weight:600;font-size:clamp(1.1rem,2.6vw,1.7rem);letter-spacing:.02em;color:var(--gold);text-decoration:none;border-bottom:3px solid var(--gold);padding-bottom:.3rem;word-break:break-all;transition:color .25s}
+.mail:hover{color:var(--gold-hi)}
+footer{padding:2rem 0;font-size:.9rem;color:var(--silver-body);border-top:1px solid var(--line);background:var(--navy-deep)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem;max-width:80rem}
+
+@media (max-width:900px){
+  .hero .wrap{grid-template-columns:1fr}
+  .tree{max-width:20rem;order:2;margin-top:1rem}
+  .hero{min-height:auto;padding-top:7.5rem}
+  .split{grid-template-columns:1fr;gap:2rem}
+  .cols{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr 1fr;row-gap:2rem}
+}
+@media (max-width:640px){
+  .wrap{padding:0 1.25rem}
+  header .wrap{height:auto;padding-top:.8rem;padding-bottom:.8rem;flex-direction:column;gap:.3rem}
+  nav{gap:1.1rem}
+  nav a{font-size:.88rem}
+  html{scroll-padding-top:6.5rem}
+  .hero{padding-top:8.5rem}
+  section{padding:3.5rem 0}
+}
+@media (prefers-reduced-motion:reduce){.hero h1,.rule,.slogan,.tree{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="mark" href="#top">RSG</a>
+    <nav aria-label="Main">
+      <a href="#top">Home</a>
+      <a href="#philosophy">Philosophy</a>
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero" id="top">
+    <div class="wrap">
+      <div>
+        <h1>Rodgers Strategy Group</h1>
+        <div class="rule" aria-hidden="true"></div>
+        <p class="slogan">Know to sell, track to grow</p>
+      </div>
+      <svg class="tree" viewBox="0 40 500 540" role="img" aria-label="A gold tree. Roots below the ground line, branches above.">
+        <defs><linearGradient id="g" gradientUnits="userSpaceOnUse" x1="0" y1="80" x2="0" y2="560"><stop offset="0" stop-color="#E2BF68"/><stop offset=".6" stop-color="#C9A24B"/><stop offset="1" stop-color="#8E7230"/></linearGradient></defs>
+        <g fill="none" stroke="url(#g)" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M250 410V95" stroke-width="11"/>
+          <path d="M214 410H286" stroke-width="11"/>
+          <g id="L">
+            <path d="M250 345L196 292H136L92 250" stroke-width="6"/>
+            <path d="M136 292L108 332" stroke-width="3"/>
+            <path d="M196 292L186 240L140 212" stroke-width="4"/>
+            <path d="M186 240L176 190" stroke-width="3"/>
+            <path d="M250 275L206 230V172L162 138" stroke-width="5"/>
+            <path d="M206 172L198 120" stroke-width="3"/>
+            <path d="M250 205L222 168L222 132" stroke-width="3.5"/>
+            <path d="M92 250L62 250" stroke-width="2"/>
+            <path d="M92 250L74 214" stroke-width="2"/>
+          </g>
+          <use href="#L" transform="translate(500 0) scale(-1 1)"/>
+          <path d="M250 410V470" stroke-width="8" opacity=".75"/>
+          <g id="R" opacity=".75">
+            <path d="M250 428L208 462H166L132 500" stroke-width="4"/>
+            <path d="M208 462L198 515" stroke-width="3"/>
+            <path d="M250 455L226 495V545" stroke-width="3.5"/>
+            <path d="M166 462L140 440" stroke-width="2"/>
+            <path d="M132 500L100 500" stroke-width="2"/>
+          </g>
+          <use href="#R" transform="translate(500 0) scale(-1 1)"/>
+          <path d="M70 410H180M320 410H430" stroke-width="2"/>
+        </g>
+        <g fill="url(#g)">
+          <g id="N">
+            <circle cx="92" cy="250" r="6"/><circle cx="108" cy="332" r="5"/><circle cx="140" cy="212" r="6"/><circle cx="176" cy="190" r="5"/><circle cx="162" cy="138" r="7"/><circle cx="198" cy="120" r="5"/><circle cx="222" cy="132" r="5"/><circle cx="62" cy="250" r="4"/><circle cx="74" cy="214" r="4"/>
+          </g>
+          <use href="#N" transform="translate(500 0) scale(-1 1)"/>
+          <circle cx="250" cy="95" r="9"/>
+          <g id="M" opacity=".75"><circle cx="132" cy="500" r="5"/><circle cx="198" cy="515" r="5"/><circle cx="226" cy="545" r="5"/><circle cx="140" cy="440" r="4"/><circle cx="100" cy="500" r="4"/></g>
+          <use href="#M" transform="translate(500 0) scale(-1 1)"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+
+  <section id="philosophy">
+    <div class="wrap split">
+      <div>
+        <h2>Two ideas behind every campaign</h2>
+        <p class="lead">A tree only grows as high as its roots go deep. Our work follows the same rule.</p>
+      </div>
+      <div class="stack">
+        <div class="panel">
+          <span class="tag">The roots</span>
+          <h3 class="big">Know to sell</h3>
+          <p>Every campaign begins with the customer. We research what leads people to buy, then build the strategy on what we find.</p>
+        </div>
+        <div class="panel">
+          <span class="tag">The branches</span>
+          <h3 class="big">Track to grow</h3>
+          <p>Every result is measured. We follow the numbers, learn from each round and put the budget where growth is.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="deep">
+    <div class="wrap">
+      <h2>What we do</h2>
+      <div class="cols">
+        <div class="panel">
+          <h3>Customer research</h3>
+          <p>What your buyers think and want before they buy.</p>
+          <ul><li>Customer interviews</li><li>Surveys</li><li>Competitor analysis</li></ul>
+        </div>
+        <div class="panel">
+          <h3>Campaign strategy</h3>
+          <p>A clear plan, built on the research.</p>
+          <ul><li>Audience and message</li><li>Channel plan</li><li>Campaign concept</li></ul>
+        </div>
+        <div class="panel">
+          <h3>Growth testing</h3>
+          <p>Live campaigns where each result shapes the next.</p>
+          <ul><li>Ad testing</li><li>GA4 tracking</li><li>Results reporting</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="process">
+    <div class="wrap">
+      <h2>How a project runs</h2>
+      <ol class="steps">
+        <li><span class="n">1</span><h3>Listen</h3><p>We learn your business, your customers and your numbers.</p></li>
+        <li><span class="n">2</span><h3>Research</h3><p>We find what drives your buyers to choose you or not.</p></li>
+        <li><span class="n">3</span><h3>Build</h3><p>We write the strategy and create the campaign around it.</p></li>
+        <li><span class="n">4</span><h3>Measure</h3><p>We track results, report plainly and improve the next round.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="contact" class="deep">
+    <div class="wrap split">
+      <div>
+        <h2>Begin a conversation</h2>
+        <p class="lead">Send a short note about what you sell and what you want to change. You will receive a reply.</p>
+      </div>
+      <div class="panel">
+        <span class="tag">Email</span>
+        <a class="mail" href="mailto:emmetrodgers@rsgmarketing.co.uk">emmetrodgers@rsgmarketing.co.uk</a>
+        <p>Rodgers Strategy Group, United Kingdom</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; <span id="yr">2026</span> Rodgers Strategy Group</span>
+    <span>Know to sell, track to grow</span>
+  </div>
+</footer>
+
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
